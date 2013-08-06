@@ -294,10 +294,10 @@ HWComposer::HWComposer(
             // hw composer version
             if (hwcHasApiVersion(mHwc, HWC_DEVICE_API_VERSION_1_3)) {
                 // 1.?? adds support for virtual displays
-                mNumDisplays = MAX_DISPLAYS;
+                mNumDisplays = MAX_HWC_DISPLAYS;
             } else if (hwcHasApiVersion(mHwc, HWC_DEVICE_API_VERSION_1_1)) {
                 // 1.1 adds support for multiple displays
-                mNumDisplays = MAX_DISPLAYS;
+                mNumDisplays = MAX_HWC_DISPLAYS;
             } else {
                 mNumDisplays = 1;
             }
