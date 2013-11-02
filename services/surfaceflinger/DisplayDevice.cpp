@@ -78,6 +78,7 @@ DisplayDevice::DisplayDevice(
       mLayerStack(NO_LAYER_STACK),
       mOrientation()
 {
+    mNativeWindow = new Surface(producer, false);
 #ifndef EGL_NEEDS_FNW
     ANativeWindow* const window = mNativeWindow.get();
 #else
