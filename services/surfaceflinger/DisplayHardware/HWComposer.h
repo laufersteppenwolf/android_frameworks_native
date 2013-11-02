@@ -162,6 +162,7 @@ public:
         virtual void setBlending(uint32_t blending) = 0;
         virtual void setTransform(uint32_t transform) = 0;
         virtual void setFrame(const Rect& frame) = 0;
+        virtual void setCrop(const Rect& crop) = 0;
         virtual void setCrop(const FloatRect& crop) = 0;
         virtual void setVisibleRegionScreen(const Region& reg) = 0;
         virtual void setBuffer(const sp<GraphicBuffer>& buffer) = 0;
